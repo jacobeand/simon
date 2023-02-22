@@ -4,47 +4,57 @@
     <head>
         <meta charset="UTF-8" />
         <meta name ="viewport" content = "width=device-width, initial-scale=1.0" />
-        <title>About Símon</title>
+        <title>Símon</title>
         <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="main.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+              crossorigin="anonymous" />
     </head>
     
-    <body bgcolor = "#d3d3d3">
-        <header>
-            <h1>Símon</h1>
-            <nav>
-                <menu>
-                    <li><a href="index.html"> Home page</a></li>
-                    <li><a href="play.html"> Try it out </a></li>
-                    <li><a href="scores.html"> High Scores!</a></li>
-                    <li><a href="about.html">Learn more!</a></li>
+    <body class="bg-dark text-light">
+        <header class = "container-fluid">
+            <nav class = "container-fluid">
+                <a class = "navbar-brand" href="#">Símon<sup> &reg;</sup></a>
+                <menu class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html"> Home page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="play.html"> Try it out </a></li>
+                    <li class="nav-item"><a class="nav-link" href="scores.html"> High Scores!</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Learn more!</a></li>
                 </menu>
             </nav>
         </header>
-        <hr width = 33% color = "green" size = "10" align = "right">
-        <hr width = 33% color = "white" size = "10" align ="middle">
-        <hr width = 33% color="red" size="10" align="left"> 
-    </body>
     
-    <main>
-        <p>
-            Símon es un juego de memoría en que sigues el demonstración de 
-            un secuencia de colores hasta que equivocas. cuanto más larga
-            sea la secuencia que repita, mayor será el resultado.
-        </p>
-
-        <p>
-            el nombre Símon no es un marca comercial, pero el nombre Simon si
-            es un marca comercial propio de Milton-Bradley. Nuestro uso de este
-            partido es solamente para el uso de educacional sin-ganancia. No vamos
-            a usar este code o programa a fuera de este definicion.
-        </p>
+    <main class="container-fluid bg-secondary text-center">
+        <div>
+            <p>
+                Símon es un juego de memoría en que sigues el demonstración de 
+                un secuencia de colores hasta que equivocas. cuanto más larga
+                sea la secuencia que repita, mayor será el resultado.
+            </p>
+            
+            <p>
+                el nombre Símon no es un marca comercial, pero el nombre Simon si
+                es un marca comercial propio de Milton-Bradley. Nuestro uso de este
+                partido es solamente para el uso de educacional sin-ganancia. No vamos
+                a usar este code o programa a fuera de este definicion.
+            </p>
+        </div>
     </main>
 
-    <footer>
-        <hr width = 33% color="red" size="10" align="left"> 
+    <footer class = "bg-dark text-dark text-muted">
+        <div class = "container-fluid">
+            <span class="text-reset"> Jacob Anderson</span>
+            <a class="text-reset" href="https://github.com/jacobeand/simon">
+                Jacob's GitHub
+            </a>
+        </div>
+        <!-- <hr width = 33% color="red" size="10" align="left"> 
         <hr width = 33% color = "white" size = "10" align ="middle">
         <hr width = 33% color = "green" size = "10" align = "right">
-        <a href="https://github.com/jacobeand"> Jacob's GitHub</a>
+        <a href="https://github.com/jacobeand"> Jacob's GitHub</a> -->
     </footer>
-
-</html>
+    </body>
+    
+    </html>
