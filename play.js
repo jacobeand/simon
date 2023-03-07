@@ -24,7 +24,7 @@ class Button {
         this.paint(25);
     }
 
-    async play(volme = 1.0) {
+    async play(volume = 1.0) {
         this.sound.volume = volume;
         await new Promise((resolve) => {
             this.sound.onended = resolve;
@@ -122,7 +122,7 @@ class Game {
 
     getRandomButton() {
         let buttons = Array.from(this.buttons.values());
-        return buttons[Math.floor(Math.random() * this.buttons.size())];
+        return buttons[Math.floor(Math.random() * this.buttons.size)];
     }
 
     saveScore(score) {
@@ -132,7 +132,7 @@ class Game {
         if (scoresText) {
             scores = JSON.parse(scoresText);
         }
-        scores = this.updateScores(userName, scores, scores);
+        scores = this.updateScores(userName, score, scores);
 
         localStorage.setItem('scores', JSON.stringify(scores));
     }
